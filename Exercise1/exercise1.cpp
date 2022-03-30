@@ -6,7 +6,7 @@ void IntTree()
 {
 
 //    BST<int> bst;
-	BST bst; 
+	BST<int>  bst; 
 
     bst.insert(8);
     bst.insert(4);
@@ -26,9 +26,9 @@ void IntTree()
     bst.insert(16);
     bst.insert(0);
     bst.traverse();
-  //  bst.remove(15);  // test all cases yourself !
+    bst.remove(15);  // test all cases yourself !
     bst.traverse();
-    
+    //std::cout << "fuck" << std::endl;
 }
 
 void StringTree()

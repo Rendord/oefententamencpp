@@ -1,6 +1,10 @@
 #include <iostream>
+#include <fstream>
 
-
+void parseFile(char filename[]) {
+    std::ifstream inputfile;
+    inputfile.open(filename);
+}
 
 int main()
 {

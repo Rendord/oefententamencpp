@@ -24,6 +24,9 @@ public:
     void add(const Fraction f1, const Fraction f2);
 
     Fraction& operator= (const Fraction& f);
+    Fraction& operator*= (const Fraction& b);
+    friend Fraction& operator* (const Fraction& a, const Fraction& b);
+    friend std::ostream & operator<< (std::ostream & os, const Fraction & f);
 };
 
 
