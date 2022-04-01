@@ -90,10 +90,11 @@ Fraction& Fraction::operator= (const Fraction& f)
 }
 
 Fraction& Fraction::operator*= (const Fraction& b) {
-	multiply(*this, b);
+	multiply(b);
+	return *this;
 }
 
-Fraction& operator* (const Fraction& a, const Fraction& b) {
+Fraction operator* (const Fraction& a, const Fraction& b) {
 	Fraction f;
 	f.multiply(a, b);
 	return f;
